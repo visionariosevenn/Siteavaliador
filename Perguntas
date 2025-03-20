@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Responda e Ganhe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Responda e Ganhe R$100</h2>
+        <p id="pergunta"></p>
+        <input type="text" id="resposta" placeholder="Digite sua resposta">
+        <button onclick="responderPergunta()">Responder</button>
+        <p id="saldo"></p>
+        <button onclick="window.location.href='saque.html'">Sacar Dinheiro</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
