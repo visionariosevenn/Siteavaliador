@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <input type="text" id="newUser" placeholder="Usuário">
+        <input type="password" id="newPass" placeholder="Senha">
+        <button onclick="cadastrar()">Cadastrar</button>
+        <p>Já tem conta? <a href="login.html">Entre aqui</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
