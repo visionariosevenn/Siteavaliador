@@ -1,0 +1,33 @@
+let saldo = 0;
+
+function login() {
+    alert("Login realizado com sucesso!");
+    window.location.href = "perguntas.html";
+}
+
+function cadastrar() {
+    alert("Cadastro realizado com sucesso!");
+    window.location.href = "login.html";
+}
+
+function responderPergunta() {
+    let pergunta = "Você gosta de ouvir músicas no Spotify?";
+    document.getElementById("pergunta").innerText = pergunta;
+
+    let resposta = document.getElementById("resposta").value;
+    if (resposta !== "") {
+        saldo += 100;
+        alert("Você ganhou R$100!");
+        document.getElementById("saldo").innerText = "Saldo: R$" + saldo;
+    }
+}
+
+function sacarDinheiro() {
+    if (saldo >= 1000) {
+        saldo -= 1000;
+        alert("Saque de R$1000 realizado! (Simulação)");
+        document.getElementById("saldo").innerText = "Saldo: R$" + saldo;
+    } else {
+        alert("Saldo insuficiente! Você precisa de pelo menos R$1000.");
+    }
+}
